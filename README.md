@@ -13,7 +13,8 @@ endpoints:
     Users
 
 
-API:
-    127.0.0.1:800 = home page
-    ''/users/ = CRUD
-    ''/users/# = GET id
+To run the appliication:
+
+docker compose up (-d)
+docker compose exec web pyhton manage.py makemigrations (--noinput)
+docker compose exec web python manage.py migrate (--noinput)
